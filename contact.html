@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상담 문의 | 풀하우스 Full House</title>
+<meta name="description" content="풀하우스 상담 문의 안내입니다. 공간 유형, 위치, 면적, 희망 일정을 정리해 이메일로 보내 주세요.">
+
+<link rel="icon" href="assets/symbol.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/Pretendard-Regular.subset.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fh.css">
+</head>
+<body>
+<div class="fh">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="hdr">
+<div class="wrap hdr-in">
+<a class="hdr-home" href="index.html" aria-label="풀하우스 처음으로"><img src="assets/symbol.svg" alt="" width="58" height="32" style="width:58px;height:auto"></a>
+<div class="hdr-right">
+<nav class="hdr-nav" aria-label="주요 메뉴"><a class="lnk" href="services.html">공간 서비스</a><a class="lnk" href="about.html">소개</a><a class="lnk" href="approach.html">디자인 방식</a><a class="lnk" href="projects.html">프로젝트</a><a class="btn sm" href="contact.html" aria-current="page">상담 문의</a></nav>
+<button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav-panel">메뉴</button>
+</div>
+</div>
+<nav class="wrap nav-panel" id="nav-panel" aria-label="모바일 메뉴"><a href="services.html">공간 서비스</a><a href="about.html">소개</a><a href="approach.html">디자인 방식</a><a href="projects.html">프로젝트</a><a href="contact.html" aria-current="page">상담 문의</a></nav>
+</header>
+<main id="main">
+<section class="pg-head"><div class="wrap">
+<p class="since">CONTACT</p>
+<h1>이메일로 상담 내용을 보내 주세요</h1>
+<p class="pg-lead">아래 항목을 작성하면 이메일 본문이 만들어집니다. 모르는 항목은 비워 두셔도 됩니다.</p>
+</div></section>
+
+<section class="ct-main"><div class="wrap ct-grid">
+<form class="fm" id="fm" onsubmit="return false" aria-label="상담 내용 작성">
+<div class="fm-row"><label for="f-type">공간 유형</label>
+<select id="f-type"><option value="">선택해 주세요</option><option value="주거">주거 (아파트·주택)</option><option value="상업">상업 (매장·사무실·의료·서비스)</option><option value="전시문화">전시문화 (박물관·전시관·문화시설)</option><option value="토목조경">토목조경 (외부 공간·조경)</option><option value="기타">기타·잘 모르겠음</option></select></div>
+<div class="fm-row"><label for="f-loc">위치</label><input id="f-loc" type="text" autocomplete="off" placeholder="예: 부산 수영구 ○○동"></div>
+<div class="fm-row"><label for="f-area">면적</label><input id="f-area" type="text" autocomplete="off" placeholder="예: 약 30평 / 모름"></div>
+<div class="fm-row"><label for="f-when">희망 일정</label><input id="f-when" type="text" autocomplete="off" placeholder="예: 2027년 상반기 착공 희망"></div>
+<div class="fm-row"><label for="f-budget">예산 범위</label><input id="f-budget" type="text" autocomplete="off" placeholder="예: 협의 / 미정"></div>
+<div class="fm-row"><label for="f-tel">연락처</label><input id="f-tel" type="text" inputmode="tel" autocomplete="tel" placeholder="회신받을 전화번호"></div>
+<div class="fm-row wide"><label for="f-note">추가 요청</label><textarea id="f-note" rows="4" placeholder="공간의 쓰임이나 바라는 분위기를 자유롭게 적어 주세요."></textarea></div>
+</form>
+<div class="pv-box">
+<h2 class="pv-t">이메일 미리보기</h2>
+<p class="pv-to"><b>받는 사람</b> byc7982@naver.com</p>
+<label class="sr-only" for="pv">이메일 본문</label>
+<textarea id="pv" class="pv" rows="12" readonly></textarea>
+<div class="pv-actions">
+<a class="btn" id="send" href="mailto:byc7982@naver.com?subject=%5B%ED%92%80%ED%95%98%EC%9A%B0%EC%8A%A4%20%EC%83%81%EB%8B%B4%20%EB%AC%B8%EC%9D%98%5D&body=안녕하세요. 풀하우스 상담을 문의드립니다.%0D%0A%0D%0A- 공간 유형:%0D%0A- 위치:%0D%0A- 면적:%0D%0A- 희망 일정:%0D%0A- 예산 범위:%0D%0A- 연락처:%0D%0A- 추가 요청:%0D%0A">이메일로 보내기</a>
+<button type="button" class="btn ghost" id="copy">내용 복사</button>
+</div>
+<p class="pg-note" id="copy-live" role="status" aria-live="polite"></p>
+<p class="pg-note">입력한 내용은 서버로 전송되지 않습니다. 사용 중인 이메일 앱이 열리면 내용을 확인한 뒤 직접 보내 주세요. 이메일 앱이 열리지 않으면 ‘내용 복사’ 후 메일에 붙여 넣어 주세요.</p>
+</div>
+</div></section>
+
+<section class="ct-alt"><div class="wrap">
+<h2 class="h2" style="font-size:clamp(24px,2.6vw,34px)">전화로 문의하시려면</h2>
+<dl class="contact">
+<div><dt>전화 문의</dt><dd><span><b>전화</b> 051 744 2741</span><span><b>휴대전화</b> 010 2338 1518</span><span><b>팩스</b> 051 797 8112</span></dd></div>
+<div><dt>이메일 문의</dt><dd><span><a href="mailto:byc7982@naver.com">byc7982@naver.com</a></span></dd></div>
+<div><dt>오시는 길</dt><dd><span><b>본사</b> 부산시 수영구 광남로 214-7</span><span><b>경북지사</b> 경북 김천시 남면 부상길26</span></dd></div>
+</dl>
+<div class="cta-actions"><a class="btn ghost" href="tel:0517442741">전화 051 744 2741</a><a class="textlink" href="about.html#location">오시는 길 보기</a></div>
+</div></section>
+</main>
+<footer class="ftr">
+<div class="wrap ftr-in">
+<div class="ftr-brand">
+<img src="assets/logo.svg" alt="Full House" width="148" height="109" style="width:148px;height:auto">
+<p class="since" style="color:var(--fh-red);font-weight:500;font-size:15px">SINCE 2006</p>
+</div>
+<nav class="ftr-nav" aria-label="바로가기"><a href="services.html">공간 서비스</a><a href="about.html">소개</a><a href="approach.html">디자인 방식</a><a href="projects.html">프로젝트</a><a href="contact.html">상담 문의</a></nav>
+<small>© 2026 Full House. All rights reserved.</small>
+</div>
+</footer>
+<script src="assets/fh.js"></script>
+</div>
+</body>
+</html>
